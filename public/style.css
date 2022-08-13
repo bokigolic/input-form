@@ -1,0 +1,34 @@
+form{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  border: 3px solid black;
+  max-width:400px;
+  margin:15px;
+  padding:40px;
+  background-color:rgb(193, 222, 241);
+  border-radius: 6px;
+}
+
+h2{
+  color: rgb(244, 27, 27);
+
+}
+
+input{
+  margin:5px;
+  border-radius:10px;
+
+}
+
+input:hover{
+  background-color: yellow;
+}
+
+label{
+  margin-top:20px;
+  display: block;
+}
+
+
+
