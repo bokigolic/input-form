@@ -10,7 +10,18 @@ const Form = () => {
 
   const [forma, setForma] = useState(preset);
 
+  const handleChange = (e) => {
+    e.preventDefault();
+    console.log(e)
+    const target = e.target;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
+    const name = target.name;
 
+    setForma({
+      ...forma,
+      [name]: value
+    })
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -29,7 +40,7 @@ const Form = () => {
             type="text"
             name="name"
             value={forma.name}
-        
+            onChange={handleChange}
           />
         </div>
         <div>
@@ -38,7 +49,7 @@ const Form = () => {
             type="password"
             name="password"
             value={forma.password}
-           
+            onChange={handleChange}
 
           />
           <button type="submit">Login</button>
