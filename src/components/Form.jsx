@@ -3,7 +3,7 @@ import { useState } from "react";
 const Form = () => {
 
   const preset = {
-    username: "Boki",
+    name: "Boki",
     password: "123",
 
   }
@@ -11,9 +11,16 @@ const Form = () => {
   const [forma, setForma] = useState(preset);
 
 
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('submit', forma)
+  }
+
+
   return (
-    <form>
-      <div>
+    <form onSubmit={handleSubmit}>
+    <div>
         <h2>Test  FORM</h2>
 
         <div>
@@ -21,6 +28,8 @@ const Form = () => {
           <input
             type="text"
             name="name"
+            value={forma.name}
+        
           />
         </div>
         <div>
@@ -28,7 +37,11 @@ const Form = () => {
           <input
             type="password"
             name="password"
+            value={forma.password}
+           
+
           />
+          <button type="submit">Login</button>
         </div>
       </div>
     </form>
