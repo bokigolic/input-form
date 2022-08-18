@@ -1,8 +1,8 @@
 # Input form
 
 # Screenshot
+![form](https://user-images.githubusercontent.com/71577349/185299401-6196fc63-2e70-4eb5-8fee-58a3d4b1aee1.JPG)
 
-![form](https://user-images.githubusercontent.com/71577349/185298769-7efd2039-e077-45c2-9bdb-a1891116ddad.JPG)
 
 ## <em><strong>Brief summary of the application</strong></em>.
  
